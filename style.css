@@ -1,0 +1,286 @@
+:root {
+    --bg:#3b3c36;
+    --title_text:#ede4da;
+    --project_bg:#4d4e49;
+    --project_text:#7e98a5;
+    --highlight:#b95454;
+    --mid_opaque:rgba(255, 255, 255, 0.27);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--project_text);
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: var(--bg);
+    color: var(--title_text);
+    font-size: 1.4rem;
+    width: 100%;
+
+}
+
+.headerMenu{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    padding: 30px 20px 10px 20px;
+}
+
+.menuBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu_link {
+    list-style-type: none;
+    padding: 1.5rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--title_text);
+}
+
+header nav ul li a:hover {
+    color: var(--highlight);
+    border-bottom: 3px solid var(--highlight);
+
+}
+
+/*Hidden Hamburger*/
+
+.hamburgerMenu {
+    display: none;
+    align-items: center;
+    background-color: var(--bg);
+    background: linear-gradient(to right, var(--highlight), var(--bg));
+    padding: 1em;
+    height: 45px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 4px solid var(--bg);
+}
+
+.hamburgerMenu button {
+    background: none;
+    border: none;
+    justify-self: end;
+    padding-right: 10%;
+    color: var(--title_text);
+}
+
+
+.hamburgerMenu nav {
+    display: none;
+    justify-self: end;
+    text-align: start;
+}
+
+.burgerNav {
+    background-color: var(--bg);
+    padding-right: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+@media (max-width: 930px){
+    .headerMenu {
+        display: none;
+    }
+    .hamburgerMenu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+main {
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--project_text);
+    width: 100%;
+    padding: 40px 0 0 0;
+}
+
+main section {
+    margin: auto;
+    max-width: 1200px;
+    background-color: var(--mid_opaque);
+    border-bottom: 10px solid var(--project_bg);
+}
+
+/* About Section and Images */
+.aboutSection {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 300px 10px 80px 10px;
+}
+
+@media (max-width: 1000px){
+    .aboutSection{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.about_text {
+    background-color: var(--project_bg);
+    color:var(--title_text);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about_text h2{
+    font-size: 2.3rem;
+}
+.about_text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.about_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.modifyImg {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid var(--bg);
+    margin: 10px;
+}
+
+.about_img img {
+    width: 100%;
+    height: auto;
+    margin-top: -40px;
+
+}
+
+/* Project Section */
+.projectSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 80px 10px;
+}
+
+.projectSection h2 {
+    text-align: center;
+    font-size: 4rem;
+    background-color: var(--project_bg);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--title_text);
+}
+
+.project_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--project_bg);
+}
+
+.project_item img {
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 4px solid var(--highlight);
+}
+
+@media (max-width:855px){
+    .project_item {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .project_item img{
+        border-radius: 20px;
+    }
+}
+
+.project_format {
+    color: var(--title_text);
+}
+
+.project_format h3 {
+    font-size: 1.8rem;
+}
+
+.project_item p {
+    font-size: 1.2rem;
+}
+
+.project_format button {
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 8px;
+    background-color: var(--title_text);
+    font-weight: bold;
+    border: none;
+}
+
+.project_format button:hover{
+    background-color: var(--highlight);
+    padding: 10px;
+}
+
+/*Contact Section*/
+
+.contactSection {
+    padding: 60px 10px;
+}
+
+.contactSection form {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--project_bg);
+    border-radius: 20px;
+}
+
+.contactSection form h2 {
+    text-align: center;
+    color: var(--title_text);
+    font-size: 2.5rem;
+}
+
+.contactSection form input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#contactMessage {
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#contactSubmit {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#honeypot {
+    display:none
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/tp_portfolio.png">
+
+    <title>Tallon Clark | Developer Portfolio</title>
+</head>
+<body>
+    <header class="headerOne">
+        <div class="headerMenu">
+            <h1>Tallon Clark</h1>
+            <nav>
+                <ul class="menuBar">
+                    <li class="menu_link"><a href="#aboutSection">About</a></li>
+                    <li class="menu_link"><a href="#projectSection">Projects</a></li>
+                    <li class="menu_link"><a href="#contactSection">Contact</a></li>
+                    <li class="menu_link"><a href="resume_pdf/928_tcResume.pdf" target="_blank" rel="noreferrer noopener">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="hamburgerMenu">
+        <button id="burgerBtn" class="burgerBtn">
+            <h1>Menu</h1>
+        </button>
+        <nav id="toggleDisplay">
+            <ul class="burgerNav">
+                <li class="menu_link"><a href="#aboutSection">About</a></li>
+                <li class="menu_link"><a href="#projectSection">Projects</a></li>
+                <li class="menu_link"><a href="#contactSection">Contact</a></li>
+                <li class="menu_link"><a href="resume_pdf/928_tcResume.pdf" target="_blank" rel="noreferrer noopener">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="aboutSection" class="aboutSection">
+            <div class="about_text">
+                <h2>About Me</h2>
+                <p>Hi, my name is Tallon Clark. I am a technical writer, engineer, chemist and now I am a front-end developer with a goal of becoming a full-stack developer. I am learning development from a variety of sources mainly university coursework and a full-stack developer bootcamp. </p>
+                <p>I focus my spare time on numerous hobbies. I am an amateur blacksmith, a competative edh player, an avid hiker and I spend as much time outdoors as possible. </p>
+            </div>
+            <div class="about_img">
+                <div class="modifyImg">
+                    <img src="img/updoot.jpg" alt="Dog Pic">
+                </div>
+                <div class="modifyImg">
+                    <img src="img/updoot_1.jpeg" alt="Dog Pic">
+                </div>
+                <div class="modifyImg">
+                    <img src="img/updoot_2.jpeg" alt="Dog Pic">
+                </div>
+                <div class="modifyImg">
+                    <img src="img/updoot_3.jpeg" alt="Dog Pic">
+                </div>
+            </div>
+        </section>
+        <section id="projectSection" class="projectSection">
+            <h2>Projects</h2>
+            <div class="project_item">
+                <img src="img/bbs_portfolio.png">
+                <div class="project_format">
+                    <h3>Bodied By Spencer</h3>
+                    <p>
+                        This is a fully responsive mockup design for the Bodied By Spencer Wax Salon, opening in October of 2022. 
+                        The mockup is built using HTML, CSS and Javascript. The full website which features appointment reservations and payment processing was built in SquareUp.
+                    </p>
+                    <a href="https://replit.com/@tctallon/Bodies-by-Spencer#index.html" target="_blank" rel="noreferrer noopener">
+                        <button class="projectBtn"> View Replit </button>
+                    </a>
+                    <a href="https://bodied-by-spencer-102939.square.site/ " target="_blank" rel="noreferrer noopener">
+                        <button class="projectBtn"> View SquareUp (Coming Soon)</button>
+                    </a>
+                </div>
+            </div>
+            <div class="project_item">
+                <img src="img/tl_portfolio.png">
+                <div class="project_format">
+                    <h3>Test Your Luck</h3>
+                    <p>
+                        This is a game built with modern Javascript. It makes use of the PokeApi by fetching data from the JSON to compare the user input value and a randomly generated value.
+                    </p>
+                    <a href="https://replit.com/@tctallon/Test-Your-Luck#index.html" target="_blank" rel="noreferrer noopener">
+                        <button class="projectBtn"> View Replit </button>
+                    </a>
+                </div>
+            </div>
+            <div class="project_item">
+                <img src="img/tp_portfolio.png">
+                <div class="project_format">
+                    <h3>Portfolio Site</h3>
+                    <p>
+                        Wow, you're visiting my portfolio site. Thank You! I made it using HTML, CSS, and Javascript. I am also using a third party to handle email processing.
+                    </p>
+                    <a href="https://replit.com/@tctallon/Tallon-Clark#index.html" target="_blank" rel="noreferrer noopener">
+                        <button class="projectBtn"> View Replit </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contactSection" class="contactSection">
+            <form id="contactform" action="https://formsubmit.co/5eac8d1e693f440e5b4516549a21c7d6" method="POST">
+                <h2>Contact</h2>
+                <input name="_formsubmit_id" type="text" id="honeypot">
+                <input name="name" type="text" id="contactName" placeholder="Name" required>
+                <input name="email" type="email" id="contactEmail" placeholder="Email" required>
+                <textarea name="message" type="text" id="contactMessage" placeholder="Message"></textarea>
+                <input type="submit" id="contactSubmit" value="Send">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
